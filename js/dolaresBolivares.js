@@ -1,4 +1,4 @@
-const bolivar = 4.75;
+const bolivar = 5;
 function convertirBolivares() {
     const dolares = document.getElementById("dinero");
     const value = dolares.value;

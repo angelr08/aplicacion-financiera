@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finanzas-Venezuela-app</title>
+    <script src="js/deuda.js"></script>
+    <script src="js/inversion.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="./index.html">FVA</a> 
+        </div>
+        <ul>
+            <li><a href="./media-ingresos.html">Media-Ingresos</a></li>
+            <li>|</li>
+            <li><a href="./inversion.html">Inversiones</a></li>
+        </ul>
+    </header>
+    <h1>Finanzas Venezuela App</h1>
+    <main>
+        <form action="">
+            <div>
+                <h2>Calcular Capacidad de deuda</h2>
+            </div>
+            <label for="ingresos">
+                <p>Ingresa la cantidad de ingresos mensuales</p>
+                <input type="number" id="ingresos">
+            </label>
+            <label for="gastos">
+                <p>Ingresa la cantidad de gastos fijos</p>
+                <input type="number" id="gastos">
+            </label>
+            <button type="button" onclick="calcularDeuda()">Calcular</button>
+            <p class="resultado ahorroResultado" id="ahorroResultado"></p>
+        </form>
+        <form action="">
+            <div>
+                <h2>Calcular Rentabilidad-Inversión</h2>
+            </div>
+            <label for="ganancias">
+                <p>Ingresa tus utilidades o ganancias</p>
+                <input type="number" id="ganancias">
+            </label>
+            <label for="inversion">
+                <p>Ingresa el monto de tu inversión</p>
+                <input type="number" id="inversion">
+            </label>
+            <button type="button" onclick="calcularRentabilidad()">Calcular</button>
+            <p class="resultado inversionTexto" id="inversionTexto"></p>
+        </form>
+    </main>
+</body>
+</html>

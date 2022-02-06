@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finanzas-Venezuela-app</title>
+    <script src="js/media-ingresos.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="./index.html">FVA</a> 
+        </div>
+        <ul>
+            <li><a href="./media-ingresos.html">Media-Ingresos</a></li>
+            <li>|</li>
+            <li><a href="./inversion.html">Inversiones</a></li>
+        </ul>
+    </header>
+    <h1>Finanzas Venezuela App</h1>
+    <main>
+        <form action="" id="mediaIngresosForm">
+            <div>
+                <h2>Calculadora Media-Ingresos</h2>
+            </div>
+            <label for="mediaNumeros">
+                <p>Ingresa uno a uno los montos de tus ingresos cuya media deseas conocer</p>
+                <input type="number" id="mediaNumeros">
+                <button class="salarios__button" type="button" onclick="agregarSalario()">Agregar salario</button>
+                <button type="button" onclick="calcularPromedio()">Calcular promedio</button>
+            </label>
+            <p class="resultado resultadoMedia" id="resultadoMedia"></p>
+        </form>
+    </main>
+</body>
+</html>

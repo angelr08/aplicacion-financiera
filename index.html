@@ -4,20 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./dolares.js"></script>
+    <title>finanzas-Venezuela-app</title>
+    <script src="js/dolaresBolivares.js"></script>
+    <script src="js/porcentaje.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <section>
+    <header>
+        <div>
+            <a href="./index.html">FVA</a> 
+        </div>
+        <ul>
+            <li><a href="./media-ingresos.html">Media-Ingresos</a></li>
+            <li>|</li>
+            <li><a href="./inversion.html">Inversiones</a></li>
+        </ul>
+    </header>
+    <h1>Finanzas Venezuela App</h1>
+    <main>
         <form action="">
+            <div>
+                <h2>Conversor Bolívar-Dólar</h2>
+            </div>
             <label for="dinero">
-                <p>Escribe la cantidad que deseas convertir</p>
+                <p>Ingresa la cantidad que deseas convertir</p>
                 <input type="number" id="dinero">
-                <button type="button" onclick="convertirBolivares()">Calcular en Dolares</button>
+                <button class="dolares__button" type="button" onclick="convertirBolivares()">Calcular en Dolares</button>
                 <button type="button" onclick="convertirDolares()">Calcular en Bolívares</button>
-                <p id="resultadoDolares"></p>
             </label>
+            <p class="resultado resultadoDolares" id="resultadoDolares"></p>
+        </form>  
+        <form action="">
+            <div>
+                <h2>Calculadora de Porcentajes</h2>
+            </div>
+            <label for="monto">
+                <p>Ingresa la cantidad que deseas convertir</p>
+                <input type="number" id="monto">
+            </label>
+            <label for="porcentaje">
+                <p>Ingresa el porcentaje</p>
+                <input type="number" id="porcentaje">
+            </label>
+            <button type="button" onclick="calcularPorcentaje()">Calcular</button>
+            <p class="resultado porcentajeTexto" id="porcentajeTexto"></p>
         </form>
-    </section>
+    </main>
 </body>
 </html>
